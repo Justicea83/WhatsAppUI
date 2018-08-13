@@ -11,6 +11,7 @@
                    HeightRequest="90"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="CenterAndExpand"
+                    Command="{Binding ContactCommand}"
                    ButtonColor="#1EBEA5"
                    Image="chat.png"/>
             </AbsoluteLayout>

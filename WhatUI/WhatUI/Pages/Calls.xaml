@@ -10,7 +10,6 @@
                 <ViewCell>
                     <StackLayout Orientation="Horizontal">
                         <circle:CircleImage Source="http://via.placeholder.com/50x50/" WidthRequest="50" HeightRequest="50"/>
-                            
                         <Label Text="{Binding Name}" HorizontalOptions="CenterAndExpand"/>
                     </StackLayout>
                 </ViewCell>

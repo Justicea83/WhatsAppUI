@@ -11,7 +11,7 @@
         <ToolbarItem Text="Modal Page" Order="Secondary"/>
         <ToolbarItem Icon="search.png" Order="Primary"  Command="{Binding SearchCommand}"/>
     </TabbedPage.ToolbarItems>
-    <local:CameraPage Title="Camera"/>
+    <local:CameraPage Icon="camera.png"/>
     <local:Chats Title="chats"/>
     <local:Status Title="status"/>
     <local:Calls Title="calls"/>
