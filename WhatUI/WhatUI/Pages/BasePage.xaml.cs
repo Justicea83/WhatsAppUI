@@ -16,6 +16,8 @@ namespace WhatUI.Pages
         {
             InitializeComponent();
             BindingContext = new BaseViewModel();
+            //setting the current child
+            CurrentPage = Children[1];
         }
     }
 }
