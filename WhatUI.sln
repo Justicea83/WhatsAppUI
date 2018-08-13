@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatUI.Android", "WhatUI\Wh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatUI.iOS", "WhatUI\WhatUI.iOS\WhatUI.iOS.csproj", "{94A45DCB-EDF8-4CBA-950C-07AE34F2C04B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatUI", "WhatUI\WhatUI\WhatUI.csproj", "{D447B63E-0F97-4489-B9F1-586086ED2B34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatUI", "WhatUI\WhatUI\WhatUI.csproj", "{D447B63E-0F97-4489-B9F1-586086ED2B34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

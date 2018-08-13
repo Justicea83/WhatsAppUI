@@ -1,4 +1,5 @@
 using System;
+using WhatUI.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,9 +10,16 @@ namespace WhatUI
 	{
 		public App ()
 		{
-			InitializeComponent();
+            #if DEBUG
+            LiveReload.Init();
+            #endif
+            InitializeComponent();
 
-			MainPage = new MainPage();
+            MainPage = new NavigationPage(new BasePage())
+            {
+                BarBackgroundColor = Color.FromHex("#1EBEA5"),
+                
+            };
 		}
 
 		protected override void OnStart ()

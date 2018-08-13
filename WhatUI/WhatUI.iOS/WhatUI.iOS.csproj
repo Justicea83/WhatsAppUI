@@ -147,6 +147,12 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="SuaveControls.FloatingActionButton">
+      <Version>2018.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>3.0.0.5</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.561731" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -155,5 +161,29 @@
       <Project>{148590A0-A3C5-4562-861C-F8B1102784BB}</Project>
       <Name>WhatUI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\camera%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chat%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pencil%402x.png" />
   </ItemGroup>
 </Project>

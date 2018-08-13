@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:views="clr-namespace:SuaveControls.Views;assembly=SuaveControls.FloatingActionButton"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhatUI.Pages.Status">
+    <AbsoluteLayout>
+        <StackLayout  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+            
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="Hello"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <views:FloatingActionButton 
+                   AbsoluteLayout.LayoutBounds="0.97,0.96,90,90"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                   WidthRequest="90"
+                   HeightRequest="90"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   ButtonColor="#1EBEA5"
+                   Image="camera.png"/>
+        <views:FloatingActionButton 
+                   AbsoluteLayout.LayoutBounds="0.97,0.8,86,86"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                   WidthRequest="86"
+                   HeightRequest="86"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   ButtonColor="Black"
+                   Image="pencil.png"/>
+    </AbsoluteLayout>
+</ContentPage>

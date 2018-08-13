@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:views="clr-namespace:SuaveControls.Views;assembly=SuaveControls.FloatingActionButton"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhatUI.Pages.Chats">
+            <AbsoluteLayout>
+                <views:FloatingActionButton 
+                   AbsoluteLayout.LayoutBounds="0.97,0.96,90,90"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                   WidthRequest="90"
+                   HeightRequest="90"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   ButtonColor="#1EBEA5"
+                   Image="chat.png"/>
+            </AbsoluteLayout>
+                
+                
+</ContentPage>
