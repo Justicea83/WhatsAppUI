@@ -4,7 +4,7 @@
             xmlns:views="clr-namespace:SuaveControls.Views;assembly=SuaveControls.FloatingActionButton"
             Title="WhatsApp"
              xmlns:local="clr-namespace:WhatUI.Pages"
-            BarBackgroundColor="#1EBEA5"
+            BarBackgroundColor="#0a877a"
              x:Class="WhatUI.Pages.BasePage">
 
     <TabbedPage.ToolbarItems>

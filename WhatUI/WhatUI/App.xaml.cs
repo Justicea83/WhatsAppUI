@@ -1,4 +1,5 @@
 using System;
+using WhatUI.Models;
 using WhatUI.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -8,7 +9,8 @@ namespace WhatUI
 {
 	public partial class App : Application
 	{
-		public App ()
+        public static Repository Repository;
+		public App (string dbPath)
 		{
             #if DEBUG
             LiveReload.Init();
@@ -17,9 +19,10 @@ namespace WhatUI
 
             MainPage = new NavigationPage(new BasePage())
             {
-                BarBackgroundColor = Color.FromHex("#1EBEA5"),
+                BarBackgroundColor = Color.FromHex("#0a877a"),
                 
             };
+            Repository = new Repository(dbPath);
 		}
 
 		protected override void OnStart ()

@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.IO;
 
 namespace WhatUI.Droid
 {
@@ -16,11 +17,18 @@ namespace WhatUI.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
 
+            var dbPath = Path.Combine(path, "..","Library","data");
+            if (!Directory.Exists(dbPath))
+            {
+                Directory.CreateDirectory(dbPath);
+            }
+            var finalPath = Path.Combine(dbPath, "database.sqlite");
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+            LoadApplication(new App(finalPath));
         }
     }
 }
