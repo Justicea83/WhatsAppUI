@@ -17,22 +17,20 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportRenderer(typeof(ChatEntry),typeof(EditEntry))]
 namespace WhatUI.Droid.Renders
 {
-    public class EditEntry : EditorRenderer
+    public class EditEntry : EntryRenderer
     {
         public EditEntry(Context con):base(con)
         {
 
         }
-        protected override void OnElementChanged(ElementChangedEventArgs<Editor> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
         {
             base.OnElementChanged(e);
 
             if(Control != null)
             {
                 var gd = new GradientDrawable();
-                gd.SetStroke(5, Android.Graphics.Color.LightGray);
                 gd.SetColor(Android.Graphics.Color.White);
-                gd.SetCornerRadius(60f);
                 Control.SetBackground(gd);
                 Control.SetPadding(50, 30, 50, 30);
                 

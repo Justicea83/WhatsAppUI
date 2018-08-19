@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace WhatUI.Renderers
 {
-    public class ChatEntry : Editor
+    public class ChatEntry : Entry
     {
         
     }

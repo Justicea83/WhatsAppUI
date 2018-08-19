@@ -15,8 +15,23 @@
                     <ColumnDefinition Width="7*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <customElements:ChatEntry Grid.Column="0">
-                </customElements:ChatEntry>
+                
+                <StackLayout Grid.Column="0" Orientation="Horizontal" >
+                    <Frame CornerRadius="20" Padding="6,0,8,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.4*"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="1.4*"/>
+                                <ColumnDefinition Width="1.4*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="smileb.png" Grid.Column="0"  />
+                            <customElements:ChatEntry Grid.Column="1" Placeholder="Type a message"/>
+                            <Image Source="attachb.png" Grid.Column="2" Rotation="240"/>
+                            <Image Source="camb.png" Grid.Column="3"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
                 <Button
                     Grid.Column="1"
                    BackgroundColor="#0a877a"
