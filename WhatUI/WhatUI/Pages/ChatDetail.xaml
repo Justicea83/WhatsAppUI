@@ -1,14 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:SuaveControls.Views;assembly=SuaveControls.FloatingActionButton"
+             xmlns:customElements="clr-namespace:WhatUI.Renderers"
              x:Class="WhatUI.Pages.ChatDetail">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Modal Page" Order="Secondary"/>
     </ContentPage.ToolbarItems>
     
         <ContentPage.Content>
-        <StackLayout VerticalOptions="End"  >
-            <Editor  HeightRequest="40"/>
+        <StackLayout VerticalOptions="End" >
+            <Grid Padding="10,0,10,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <customElements:ChatEntry Grid.Column="0">
+                </customElements:ChatEntry>
+                <Button
+                    Grid.Column="1"
+                   BackgroundColor="#0a877a"
+                    BorderRadius="80"
+                   Image="mic.png"/>
+            </Grid>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
