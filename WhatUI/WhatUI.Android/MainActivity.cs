@@ -30,6 +30,11 @@ namespace WhatUI.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App(finalPath));
         }
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            Toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            return base.OnCreateOptionsMenu(menu);
+        }
     }
 }
 

@@ -26,7 +26,7 @@
                                 <ColumnDefinition Width="1.4*"/>
                             </Grid.ColumnDefinitions>
                             <Image Source="smileb.png" Grid.Column="0"  />
-                            <customElements:ChatEntry Grid.Column="1" Placeholder="Type a message"/>
+                            <customElements:ChatEntry Grid.Column="1" Placeholder="Type a message" />
                             <Image Source="attachb.png" Grid.Column="2" Rotation="240"/>
                             <Image Source="camb.png" Grid.Column="3"/>
                         </Grid>
