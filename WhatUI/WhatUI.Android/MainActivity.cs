@@ -10,9 +10,11 @@ using System.IO;
 
 namespace WhatUI.Droid
 {
-    [Activity(Label = "WhatUI", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "WhatUI", Icon = "@mipmap/icon", Theme = "@style/MainTheme", 
+        MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        public static Android.Support.V7.Widget.Toolbar ToolBar { get; private set; }
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -32,7 +34,7 @@ namespace WhatUI.Droid
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            Toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            ToolBar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             return base.OnCreateOptionsMenu(menu);
         }
     }

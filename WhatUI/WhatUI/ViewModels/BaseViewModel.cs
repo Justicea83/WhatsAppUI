@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using WhatUI.Renderers;
 using Xamarin.Forms;
 
 namespace WhatUI.ViewModels
@@ -11,7 +12,9 @@ namespace WhatUI.ViewModels
         public BaseViewModel()
         {
             SearchCommand = new Command(()=> {
-                Application.Current.MainPage.DisplayAlert("Search","Clicked","Ok");
+                Application.Current.MainPage.Navigation.PushAsync(new SearchPage {
+                    SearchPlaceHolderText = "Search..."
+                });
             });
         }
         public ICommand SearchCommand { get; set; }
